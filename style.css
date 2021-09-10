@@ -8,6 +8,8 @@
 html,
 body{
     font-family: var(--font_type);
+    /* overflow-x: hidden; */
+
 }
 a{
     text-decoration: none;
@@ -76,6 +78,10 @@ section{
     color: var(--secondary_color);
 
 }
+.navbar-expand-lg .navbar-collapse {
+    
+    justify-content: right;
+}
 #nav-icon .navicons:hover{
     color: var(--primary_color);
     font-weight: 700;
@@ -100,18 +106,14 @@ section{
     width: 100%;
     background-color: white;
 }
-#first-page{
+.first-page{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
 }
-.first_text{
-    border: 116px solid white;
-    border-left:0 ;   
-    float: left;
-}
-.first_text .second_text{
+
+.second_text{
    
     font-weight: 300;
     font-size: 15px;
@@ -125,7 +127,7 @@ section{
     line-height: 40px;
 }
 #img_content{
-    width: 50%;
+    /* width: 50%; */
 }
 #first-page button{
     background-color: #458FF6;
@@ -138,13 +140,31 @@ section{
 #div-dots img {
     width: 54px;
 }
+.special{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.parent-of-element {
+    position: relative;
+    height: 500px;
+    /* or height: 73.61% */
+    /* or height: 35vh */
+    /* or height: ANY HEIGHT */
+ }
+ 
+ .element {
+   position: absolute;
+   top: 50%;
+ 
+   -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+           transform: translateY(-50%);
+ }
 #navicons1{
   color: black; 
   font-weight: 900;
 }
-#img_content img{
-    width: 600px;
-}
+
 .second-part p{
     text-align: center; 
     width: 80%;
@@ -160,23 +180,34 @@ section{
 }
 #service-text{
     margin-top: lid;
-    width: 50%;
+    width: 58%;
 }
 
+.wrapper{
+ display: flex;
+ width: 66%;
+ margin: auto;
+}
 .all-boxes{
     margin: 0 auto;
-    width: 70%;
+    /* width: 70%; */
     margin-top: 30px;
     
-    
+}
+.first-card-img{
+    padding-bottom: 5px;
+}
+.image-bag-holder{
+    padding-bottom: 23px;
 }
 .box{
     padding: 0 15px;
     border-radius: 20px;
-    width: 24%;
+    /* width: 24%; */
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     margin: 0 15px; 
+    height: 260px;
     
 }
 .box > p{
@@ -188,6 +219,10 @@ section{
 .search{
     color: var(--primary_color);
     font-weight: 700;
+    text-align: left;
+}
+.search-card-text{
+    text-align: left;
 }
 .container{
     background-image: url('/Travel/images/FrameBOx.png');
@@ -195,12 +230,7 @@ section{
     width: 100%;
     text-align: center;
 }
-.all-box1{
-    display: flex;
-    justify-content: center;
-    
 
-}
 .all-box2{
     display: flex;
     justify-content: center;
@@ -209,6 +239,21 @@ section{
 #btn-box{
     margin-top: 40px;
 }
+.btn-of-cards{
+    text-align: center;
+
+}
+.btn-of-cards button{
+   padding: 0 3%;
+}
+.btn-of-cards button:hover{
+    background-color: #4364F7;
+    color: white;
+}
+.wrapsection{
+    display: flex;
+}
+
 #page3{
     width: 80%;
     margin: 0 auto;
@@ -230,9 +275,9 @@ section{
     display: inline;
 }
 #text3{
-    width: 25%;
+    /* width: 25%; */
     justify-content: end;
-    margin-right: 65px;
+    /* margin-right: 65px; */
 }
 .img_content{
     width: 90%;
@@ -274,10 +319,13 @@ section{
    width: 50%;
     margin: auto; 
 }
+/* .sec-org{
+    width: 50%;
+} */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 25%;
+    /* width: 25%; */
     border-radius: 20px;
     margin: 15px;
 
@@ -355,7 +403,7 @@ section{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    border: 89px solid transparent;
+    border-top: 50px solid transparent;
 }
 .contentfoot{
     display: flex;
@@ -399,3 +447,92 @@ section{
    font-weight: bold;
     
 }
+#footersec{
+    margin-bottom: 0 !important;
+    padding-bottom: 0 ;
+}
+
+.container-footer{
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden;
+}
+#footersec{
+    overflow-x: hidden !important;
+}
+/* // Medium devices (mobiles,576px and up) */
+@media (max-width: 545px) { 
+   
+.landimg{
+    width: 360px;
+}
+.special{
+    width: 90%;
+    margin: auto;
+}
+.row{
+    margin: auto;
+}
+.container{
+    text-align: left;
+
+}
+.parent-of-element{
+    height: 350px;
+}
+.d-inline-block align-top{
+    margin-left: 40px;
+}
+#service-text{
+    margin-top: lid;
+    width:100%;
+    padding: 0px !important;
+}
+.second-part p{
+    width: 100% !important;
+    line-height: 20px;
+ }
+ .wrapper{
+    width: 100%;
+    display: block;
+    margin: auto;
+ }
+ .card-wrap{
+     border: 10px;
+     margin-top: 10px;
+     padding: 10px;
+
+ }
+ #text3 {
+    width: 100%;
+    justify-content: end;
+     margin-right: 10px;
+}
+.wrapsection{
+    display: block;
+}
+.sec2-img{
+    width: 100%;
+}
+.sec-card{
+    display: block;
+    width: 100%;
+}
+#inbetw{
+    display: block;
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (max-width:320 px) { 
+    .img_content{
+    width: 200px;
+}
+ } */
+
+/* // Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .img_content{
+        width: 200px;
+    }
+ /* }  */
